@@ -14,7 +14,7 @@ public class CategoriaDao implements RepositorioDeCategorias {
 	private static List<Categoria> categorias;
 	
 	static {
-		categorias = new ArrayList<Categoria>();
+		populaCategoriasIniciais();
 	}
 	
 	public void salva(Categoria categoria) {
@@ -36,4 +36,12 @@ public class CategoriaDao implements RepositorioDeCategorias {
 		}
 	}
 
+	
+	private static void populaCategoriasIniciais() {
+		categorias = new ArrayList<Categoria>();
+		
+		categorias.add(new Categoria(1, "Eletrônicos"));
+		categorias.add(new Categoria(2, "Música"));
+		categorias.add(new Categoria(3, "Perfumes"));
+	}
 }
