@@ -4,6 +4,7 @@ import java.util.ArrayList;
 import java.util.Collections;
 import java.util.Iterator;
 import java.util.List;
+import java.util.Random;
 
 import br.com.caelum.online.loja.dominio.Categoria;
 import br.com.caelum.online.loja.dominio.Produto;
@@ -18,6 +19,7 @@ public class ProdutoDao implements RepositorioDeProdutos {
 	}
 	
 	public void salva(Produto produto) {
+		produto.setId(new Random().nextInt(10000000) + 1);
 		produtos.add(produto);
 	}
 
