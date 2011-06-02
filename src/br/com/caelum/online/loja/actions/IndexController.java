@@ -7,6 +7,7 @@ import br.com.caelum.vraptor.Resource;
 public class IndexController {
 
 	@Path("/")
-	public void root() {}
+	public void root() {
+	}
 
 }
