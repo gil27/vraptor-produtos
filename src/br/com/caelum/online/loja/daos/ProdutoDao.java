@@ -20,6 +20,7 @@ public class ProdutoDao implements RepositorioDeProdutos {
 	
 	public void salva(Produto produto) {
 		produto.setId(new Random().nextInt(10000000) + 1);
+		produto.setCategoria(new CategoriaDao().pegaPorId(produto.getCategoria().getId()));
 		produtos.add(produto);
 	}
 
