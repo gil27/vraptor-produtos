@@ -36,6 +36,12 @@ public class CategoriaDao implements RepositorioDeCategorias {
 		}
 	}
 
+	public Categoria pegaPorId(int id) {
+		for(Categoria categoria : categorias) {
+			if(categoria.getId() == id) return categoria;
+		}
+		return null;
+	}
 	
 	private static void populaCategoriasIniciais() {
 		categorias = new ArrayList<Categoria>();
@@ -44,4 +50,5 @@ public class CategoriaDao implements RepositorioDeCategorias {
 		categorias.add(new Categoria(2, "Música"));
 		categorias.add(new Categoria(3, "Perfumes"));
 	}
+	
 }

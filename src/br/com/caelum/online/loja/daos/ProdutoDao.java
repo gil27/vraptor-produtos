@@ -48,4 +48,11 @@ public class ProdutoDao implements RepositorioDeProdutos {
 		produtos.add(new Produto(1, "Ivete Sangalo Ao Vivo", "cd da cantora baiana", 29.90, musica));
 	}
 
+	public Produto pegaPorId(int id) {
+		for(Produto produto : produtos) {
+			if(produto.getId() == id) return produto;
+		}
+		return null;
+	}
+
 }

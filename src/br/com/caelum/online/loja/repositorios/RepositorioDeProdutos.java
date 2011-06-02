@@ -9,4 +9,5 @@ public interface RepositorioDeProdutos {
 	void salva(Produto produto);
 	List<Produto> pegaTodos();
 	void remove(Produto produto);
+	Produto pegaPorId(int id);
 }

@@ -7,10 +7,8 @@ import br.com.caelum.online.loja.dominio.Produto;
 
 public interface RepositorioDeCategorias {
 
-	public abstract void salva(Categoria categoria);
-
-	public abstract List<Categoria> pegaTodos();
-
-	public abstract void remove(Produto produto);
-
+	void salva(Categoria categoria);
+	List<Categoria> pegaTodos();
+	void remove(Produto produto);
+	Categoria pegaPorId(int id);
 }
