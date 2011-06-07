@@ -1,12 +1,2 @@
-*.pydevproject
-.project
-.metadata
 bin/**
-tmp/**
-tmp/**/*
-*.tmp
-local.properties
-.classpath
-.settings/
-.loadpath
 WebContent/WEB-INF/classes/
