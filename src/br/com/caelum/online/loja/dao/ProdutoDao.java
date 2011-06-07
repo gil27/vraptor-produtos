@@ -1,4 +1,4 @@
-package br.com.caelum.online.loja.daos;
+package br.com.caelum.online.loja.dao;
 
 import java.util.ArrayList;
 import java.util.Collections;
@@ -8,7 +8,7 @@ import java.util.Random;
 
 import br.com.caelum.online.loja.dominio.Categoria;
 import br.com.caelum.online.loja.dominio.Produto;
-import br.com.caelum.online.loja.repositorios.RepositorioDeProdutos;
+import br.com.caelum.online.loja.repositorio.RepositorioDeProdutos;
 
 public class ProdutoDao implements RepositorioDeProdutos {
 
@@ -48,7 +48,7 @@ public class ProdutoDao implements RepositorioDeProdutos {
 		produtos.add(new Produto(1, "iPod", "tocador de mp3 da apple", 299.90, eletronico));
 		produtos.add(new Produto(1, "iPad", "tablet da apple", 1999.99, eletronico));
 		produtos.add(new Produto(1, "212 for women", "perfume da carolina herrera", 67.80, perfume));
-		produtos.add(new Produto(1, "Ivete Sangalo Ao Vivo", "cd da cantora baiana", 29.90, musica));
+		produtos.add(new Produto(1, "Ivete Sangalo Ao Vivo", "cd da cantora", 29.90, musica));
 	}
 
 	public Produto pegaPorId(int id) {

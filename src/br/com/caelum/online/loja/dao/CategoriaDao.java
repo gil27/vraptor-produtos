@@ -1,4 +1,4 @@
-package br.com.caelum.online.loja.daos;
+package br.com.caelum.online.loja.dao;
 
 import java.util.ArrayList;
 import java.util.Collections;
@@ -8,7 +8,7 @@ import java.util.Random;
 
 import br.com.caelum.online.loja.dominio.Categoria;
 import br.com.caelum.online.loja.dominio.Produto;
-import br.com.caelum.online.loja.repositorios.RepositorioDeCategorias;
+import br.com.caelum.online.loja.repositorio.RepositorioDeCategorias;
 
 public class CategoriaDao implements RepositorioDeCategorias {
 

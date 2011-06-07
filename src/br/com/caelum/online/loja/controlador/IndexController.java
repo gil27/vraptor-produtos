@@ -1,4 +1,4 @@
-package br.com.caelum.online.loja.actions;
+package br.com.caelum.online.loja.controlador;
 
 import br.com.caelum.vraptor.Path;
 import br.com.caelum.vraptor.Resource;

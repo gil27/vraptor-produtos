@@ -1,4 +1,4 @@
-package br.com.caelum.online.loja.repositorios;
+package br.com.caelum.online.loja.repositorio;
 
 import java.util.List;
 
