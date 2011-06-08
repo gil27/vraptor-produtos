@@ -2,26 +2,23 @@ package br.com.caelum.online.loja.dominio;
 
 public class Produto {
 
-	private int id;
+	private Long id;
 	private String nome;
 	private String descricao;
 	private double preco;
-	private Categoria categoria;
 
 	public Produto() {}
 	
-	public Produto(int id, String nome, String descricao, double preco,
-			Categoria categoria) {
+	public Produto(Long id, String nome, String descricao, double preco) {
 		this.id = id;
 		this.nome = nome;
 		this.descricao = descricao;
 		this.preco = preco;
-		this.categoria = categoria;
 	}
-	public int getId() {
+	public Long getId() {
 		return id;
 	}
-	public void setId(int id) {
+	public void setId(Long id) {
 		this.id = id;
 	}
 	public String getNome() {
@@ -41,12 +38,6 @@ public class Produto {
 	}
 	public void setPreco(double preco) {
 		this.preco = preco;
-	}
-	public Categoria getCategoria() {
-		return categoria;
-	}
-	public void setCategoria(Categoria categoria) {
-		this.categoria = categoria;
 	}
 	
 	

@@ -1,4 +1,4 @@
-package br.com.caelum.online.loja.repositorios;
+package br.com.caelum.online.loja.repositorio;
 
 import java.util.List;
 
@@ -9,5 +9,5 @@ public interface RepositorioDeProdutos {
 	void salva(Produto produto);
 	List<Produto> pegaTodos();
 	void remove(Produto produto);
-	Produto pegaPorId(int id);
+	Produto pegaPorId(Long id);
 }
