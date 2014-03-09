@@ -8,6 +8,7 @@
 <title>Lista de Produtos</title>
 </head>
 <body>
+	<span>${menssagem}</span>
 	Lista de Produtos
 	<table>
        <c:forEach var="produto" items="${produtoList}" >
