@@ -7,7 +7,9 @@ import java.util.List;
 
 import br.com.caelum.online.loja.dominio.Produto;
 import br.com.caelum.online.loja.repositorio.RepositorioDeProdutos;
+import br.com.caelum.vraptor.ioc.Component;
 
+@Component
 public class ProdutoDao implements RepositorioDeProdutos {
 
 	private final static List<Produto> PRODUTOS = new ArrayList<Produto>();
